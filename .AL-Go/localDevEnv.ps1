@@ -40,7 +40,6 @@ if ($pshost.Name -eq "Visual Studio Code Host") {
             $credstr = " -credential (New-Object PSCredential '$($credential.UserName)', ('$($credential.Password | ConvertFrom-SecureString)' | ConvertTo-SecureString))"
         }
         Start-Process -Verb runas $pslink @("-Command ""$scriptName"" -fromVSCode -containerName '$containerName' -auth '$auth' -licenseFileUrl '$licenseFileUrl' -insiderSasToken '$insiderSasToken'$credstr")
-        return
     }
 }
 

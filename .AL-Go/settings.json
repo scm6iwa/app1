@@ -1,5 +1,6 @@
 {
-    "country":  "us",
+    "country":  "gb",
+    "artifact":  "bcartifacts/Sandbox/21/gb/latest",
     "appFolders":  [
     ],
     "testFolders":  [

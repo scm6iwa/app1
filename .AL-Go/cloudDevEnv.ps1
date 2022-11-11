@@ -33,7 +33,6 @@ if ($pshost.Name -eq "Visual Studio Code Host") {
             $pslink = "powershell.exe"
         }
         Start-Process -Verb runas $pslink @("-Command ""$scriptName"" -fromVSCode -environmentName '$environmentName' -reuseExistingEnvironment `$$reuseExistingEnvironment")
-        return
     }
 }
 
